@@ -1,0 +1,10 @@
+baseURL = "http://localhost:1313"
+enableRobotsTXT = true
+languageCode = "en-us"
+theme = "custobar"
+title = "Custobar"
+[params]
+metadescription = "Custobar"
+sharedescription = "Custobar"
+shareimage = "/uploads/2017/11/26/share.jpg"
+sharetitle = "Custobar"

@@ -1,0 +1,81 @@
+html
+  //background-color: $dark-blue
+body
+  background: $white
+  font-family: 'Lato', sans-serif
+  font-weight: 100
+  font-size: 30px
+  padding: 0
+.container
+  max-width: 1200px
+  width: 100%
+  margin: 0px auto
+  box-sizing: border-box
+  padding-left: 15px
+  padding-right: 15px
+  text-align: center
+
+.base-title
+  font-size: 54px
+  line-height: 60px
+  margin-bottom: 55px
+  padding: 0
+  color: $black
+  font-family: 'Copyright Klim Type Foundry'
+
+.base-text
+  font-size: 16.5px
+  line-height: 30px
+  color: $black
+  font-weight: 300
+
+
+.button
+  display: inline-block
+  border-radius: 5px
+  cursor: pointer
+  min-width: 185px
+  text-align: center
+  box-sizing: border-box
+  padding: 15px 30px
+  color: $white
+  background-color: $green
+  font: 500 16px/20px 'Radikal'
+  letter-spacing: -0.3px
+  text-decoration: none
+  border: none
+  box-shadow: 0 2px 0px rgba( 102, 166, 50, 1)
+  +transition(300ms, linear)
+  &:hover
+    text-decoration: none
+    background-color: darken($green, 5%)
+  
+.link
+  display: inline-block
+
+.button--popup
+  border: none  
+
+a.button.popup
+  box-shadow: 0 2px 0px rgba( 102, 166, 50, 1), 0 5px 20px rgba(86, 208, 98, 0.51)
+
+section
+  padding: 130px 0
+
+@media screen and (max-width: 1240px)
+  html,
+  body
+    max-width: 1200px
+    width: 100%
+    overflow-x: hidden
+  .container
+    padding-left: 15px
+    padding-right: 15px
+  html,
+  body
+    max-width: 100%
+    width: 100%
+    overflow-x: hidden
+  .container
+    padding-left: 15px
+    padding-right: 15px
