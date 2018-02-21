@@ -5,6 +5,7 @@ body
   font-family: 'Lato', sans-serif
   font-weight: 100
   font-size: 30px
+  color: $dark
   padding: 0
 .container
   max-width: 1600px
@@ -15,25 +16,37 @@ body
   padding-right: 15px
   text-align: center
 
+strong
+  font-family: 'Lato', sans-serif
+  font-weight: 700
+  font-size: 30px
+  color: $dark
+
 .flex
   display: flex
   align-items: center
   justify-content: space-between 
 
 .base-title
-  font-size: 54px
+  font-size: 50px
   line-height: 60px
   margin-bottom: 55px
   padding: 0
   color: $black
   font-family: 'Copyright Klim Type Foundry'
 
-.base-text
-  font-size: 16.5px
-  line-height: 30px
-  color: $black
-  font-weight: 300
+.base-title-small
+  font-size: 35px
 
+.base-text
+  font-family: 'Lato', sans-serif
+  font-weight: 100
+  font-size: 30px
+  line-height: 1.4
+  color: $dark
+
+img
+  width: 100%
 
 .button
   display: inline-block
@@ -71,8 +84,6 @@ body
 a.button.popup
   box-shadow: 0 2px 0px rgba( 102, 166, 50, 1), 0 5px 20px rgba(86, 208, 98, 0.51)
 
-section
-  padding: 130px 0
 
 @media screen and (max-width: 1240px)
   html,
