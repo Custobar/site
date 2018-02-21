@@ -3,9 +3,17 @@
 {{$headerMenu := .Params.header_section.menu}}
 
 <header class="header">
-  <div class="container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, earum aspernatur molestias, eligendi, voluptate porro accusantium tenetur perferendis, explicabo quas culpa recusandae quidem sunt mollitia totam minima alias ipsam obcaecati.</p>
-    <h2 class="base-title">{{$headerTitle}}</h2>
-    <a href="#">{{$headerButton}}</a>
+  <div class="container flex">
+  	<a href="#" class="logo">
+  		<img src="images-theme/custobar_logo.png" alt="Custobar logo">
+  	</a>
+  	<ul class="menu">
+  		<li class="menu__item"><a href="#">Features</a></li>
+  		<li class="menu__item"><a href="#">Pricing</a></li>
+  		<li class="menu__item"><a href="#">Support</a></li>
+  		<li class="menu__item"><a href="#">Partners</a></li>
+  		<li class="menu__item"><a href="#">Blog</a></li>
+  	</ul>
+  	<a href="#" class="demo blue-button button">Book a demo</a>
   </div>
 </header>

@@ -7,13 +7,18 @@ body
   font-size: 30px
   padding: 0
 .container
-  max-width: 1200px
-  width: 100%
+  max-width: 1600px
+  width: 90%
   margin: 0px auto
   box-sizing: border-box
   padding-left: 15px
   padding-right: 15px
   text-align: center
+
+.flex
+  display: flex
+  align-items: center
+  justify-content: space-between 
 
 .base-title
   font-size: 54px
@@ -44,11 +49,18 @@ body
   letter-spacing: -0.3px
   text-decoration: none
   border: none
-  box-shadow: 0 2px 0px rgba( 102, 166, 50, 1)
   +transition(300ms, linear)
   &:hover
     text-decoration: none
     background-color: darken($green, 5%)
+  &.blue-button
+    background-color: $white
+    color: $blue
+    text-transform: uppercase
+    font-family: $lato
+    font-weight: 700
+    border: 1px solid $blue
+    font-size: 20px  
   
 .link
   display: inline-block
