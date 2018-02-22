@@ -30,19 +30,21 @@ strong
 .base-title
   font-size: 50px
   line-height: 60px
-  margin-bottom: 55px
+  margin-bottom: 35px
   padding: 0
   color: $black
   font-family: 'Copyright Klim Type Foundry'
 
 .base-title-small
   font-size: 35px
+  color: $black
+  font-family: 'Copyright Klim Type Foundry'
 
 .base-text
   font-family: 'Lato', sans-serif
   font-weight: 100
   font-size: 30px
-  line-height: 1.4
+  line-height: 1.3
   color: $dark
 
 img
@@ -73,7 +75,11 @@ img
     font-family: $lato
     font-weight: 700
     border: 1px solid $blue
-    font-size: 20px  
+    font-size: 20px
+    transition: all 0.3s ease
+    &:hover
+      color: darken($blue, 15%)
+      border-color: darken($blue, 15%)  
   
 .link
   display: inline-block
