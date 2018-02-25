@@ -59,7 +59,7 @@
     "transfer-webpack-plugin": "^0.1.4",
     "url-loader": "^0.5.9",
     "urlize.js": "^1.0.1",
-    "webpack": "^3.0.0",
+    "webpack": "^3.11.0",
     "webpack-dev-server": "^2.5.0",
     "webpack-merge": "^4.1.0"
   },
