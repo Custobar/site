@@ -1,7 +1,7 @@
 {
   "name": "Custobar",
   "version": "1.0.0",
-  "description": "Site for Custobar",
+  "description": "Custobar",
   "main": "index.js",
   "webpackConfig": {
     "inputFolder": "/themes/custobar/src/",
