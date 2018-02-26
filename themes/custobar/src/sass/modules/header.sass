@@ -31,3 +31,57 @@ header
 			font-weight: 600
 			color: $dark
 
+.ninja-btn
+	display: none
+	float: left
+	position: relative
+	width: 40px
+	height: 28.66666667px
+	cursor: pointer
+	padding: 0
+	span
+		transition: all 0.3s ease-in-out
+		-webkit-transition: all 0.3s ease-in-out
+		-moz-transition: all 0.3s ease-in-out
+		-o-transition: all 0.3s ease-in-out
+		-ms-transition: all 0.3s ease-in-out
+		background-color: $black
+		width: 40px
+		height: 2px
+		&:before, &:after
+			transition: all 0.3s ease-in-out
+			-webkit-transition: all 0.3s ease-in-out
+			-moz-transition: all 0.3s ease-in-out
+			-o-transition: all 0.3s ease-in-out
+			-ms-transition: all 0.3s ease-in-out
+			background-color: $black
+			width: 40px
+			height: 2px
+		position: relative
+		display: inline-block
+		float: left
+		margin-top: 13.33333333px
+		&:before, &:after
+			content: ""
+			position: absolute
+			left: 0
+		&:before
+			top: -13.33333333px
+		&:after
+			top: 13.33333333px
+	&.active span
+		background-color: transparent
+		&:before, &:after
+			top: 0
+		&:before
+			transform: rotate(-135deg)
+			-webkit-transform: rotate(-135deg)
+			-moz-transform: rotate(-135deg)
+			-o-transform: rotate(-135deg)
+			-ms-transform: rotate(-135deg)
+		&:after
+			transform: rotate(135deg)
+			-webkit-transform: rotate(135deg)
+			-moz-transform: rotate(135deg)
+			-o-transform: rotate(135deg)
+			-ms-transform: rotate(135deg)
