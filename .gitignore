@@ -5,3 +5,4 @@ static/images-theme
 .DS_Store
 package-lock.json
 public
+themes/custobar/static/
