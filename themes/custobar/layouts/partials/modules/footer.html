@@ -1,56 +1,60 @@
+{{$footer := .Params.footer}}
 <footer>
   <div class="container">
-  	<h2 class="footer-title base-title">Your customers are <span>induviduals</span>, <br> treat them that way</h2>
+    {{with $footer.title}}
+  	<h2 class="footer-title base-title">{{.}}</h2>
+    {{end}}
   	<div class="footer-grid flex">
+      {{with $footer.menu}}
   		<ul class="footer__item footer__menu">
-  			<li><a href="#">API documentation</a></li>
-  			<li><a href="#">Become a partner</a></li>
-  			<li><a href="#">Support</a></li>
-  			<li><a href="#">Plugins</a></li>
-  			<li><a href="#">Press</a></li>
-  			<li><a href="#">Contact</a></li>
-  			<li><a href="#">Jobs</a></li>
+  		{{range .}}
+        <li><a href="{{.url}}">{{.title}}</a></li>
+      {{end}}
   		</ul>
+      {{end}}
+      {{with $footer.addresses}}
   		<div class="footer__item footer__address">
-  			<address>
-  				<span class="city">Amasterdam</span>
-  				<span>Utrechtsedwarsstraat 13 III</span>
-  				<span>1017WB Amsterdam, Netherlands</span>
-  				<a href="tel:467252238922">+ 46 72 5223 89 22</a>
-  			</address>
-  			<address>
-  				<span class="city">Berlin</span>
-  				<span>Max-Beer-Straße 15</span>
-  				<span>10119 Berlin, Germany</span>
-  				<a href="tel:467252238922">+ 46 72 5223 89 22</a>
-  			</address>
-  			<address>
-  				<span class="city">Helsinki</span>
-  				<span>Aleksis Kiven Katu 26 C</span>
-  				<span>00500 Helsinki, Finland</span>
-  				<a href="tel:467252238922">+ 46 72 5223 89 22</a>
-  			</address>
-  			<address>
-  				<span class="city">Sophia Antipolis</span>
-  				<span>2000 Route des Lucioles</span>
-  				<span>06901 Sophia Antipolis, France</span>
-  				<a href="tel:467252238922">+ 46 72 5223 89 22</a>
-  			</address>
+  			{{range .}}
+        <address>
+          <span class="city">{{.city}}</span>
+          {{.address|safeHTML}}
+          <a href="tel:{{.tel}}">{{.tel}}</a>
+        </address>
+        {{end}}
   		</div>
+      {{end}}
+      {{with $footer.whats_new}}
   		<div class="footer__item new">
-  			<div class="new__title">What’s new</div>
-  			<img class="new__image" src="images-theme/table.jpg" alt="">
+  			{{with .title}}
+        <div class="new__title">{{.}}</div>
+        {{end}}
+        {{with .news_picture}}
+  			<img class="new__image" src="{{.}}" alt="">
+        {{end}}
   			<div class="new__item">
-  				<div class="new__item__title base-title-small">RFM matrix is effective way to take actions based on your customer data.</div>
-  				<div class="new__item__text base-text">Want to target your best customers? With Custobar it's click-and-go!</div>
+  				{{with .news_title}}
+          <div class="new__item__title base-title-small">{{.}}</div>
+          {{end}}
+          {{with .news_caption}}
+  				<div class="new__item__text base-text">{{.}}</div>
+          {{end}}
   			</div>
   		</div>
+      {{end}}
   	</div>
-  	<div class="platform">
-  		<img class="platform__image" src="images-theme/campaign_statistics.svg" alt="">
-  		<h2 class="platform__title base-title">The only platform for retail</h2>
-  		<a href="#" class="blue-button button">Book a demo</a>
+  	{{with $footer.platform}}
+    <div class="platform">
+  		{{with .icon}}
+      <img class="platform__image" src="{{.}}" alt="">
+      {{end}}
+      {{with .title}}
+  		<h2 class="platform__title base-title">{{.}}</h2>
+      {{end}}
+      {{with .button}}
+  		<a href="{{.url}}" class="blue-button button">{{.title}}</a>
+      {{end}}
   	</div>
+    {{end}}
   </div>
   <div class="footer__bottom">
     <div class="container">
@@ -72,4 +76,3 @@
     </div>
   </div>
 </footer>
-
