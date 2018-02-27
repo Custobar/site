@@ -1,23 +1,33 @@
+{{$main := .Params}}
 <main>
+	{{with $main.hero}}
 	<section class="base-section hero">
 		<div class="container">
-			<h1 class="hero__title base-title">The <span>only</span> <br> marketing platform <br> for retail</h1>
+			<h1 class="hero__title base-title">{{.title | safeHTML}}</h1>
 			<div class="hero__item flex">
 				<p class="herro__text base-text">
-					Custobar is the only sales and marketing platform designed with retail at heart from the very beginning. Simply stated, we gather all your customer, sales and product data from every source, and put it where it’s most powerful <strong>– in your hands.</strong>
+					{{.caption | safeHTML}}
 				</p>
+				{{$alt := .title | plainify}}
+				{{with .image}}
 				<div class="hero__image">
-					<img src="images-theme/hero_laptop.svg" alt="hero_laptop">
+					<img src="{{.}}" alt="{{$alt}}">
 				</div>
-			</div> 
+				{{end}}
+			</div>
 		</div>
 	</section>
-
+	{{end}}
 	<section class="base-section sentence">
 		<div class="container">
-			<h3 class="sentence__title base-title base-title-small">Let your own data boost your sales</h3>
-			<p class="base-text sentence__text">With highly effective degree of automation, you’ll be able to reach out to customers in the way that suits them best – telling them about the products and promotions you can be sure they’ll want to hear about.</p>
-
+			{{with $main.hero}}
+			{{with .description.title}}
+			<h3 class="sentence__title base-title base-title-small">{{.}}</h3>
+			{{end}}
+			{{with .description.text}}
+			<p class="base-text sentence__text">{{.|safeHTML}}</p>
+			{{end}}
+			{{end}}
 			<div class="sentence__item flex">
 				<div class="sentence__benefits">
 					<svg viewBox='0 0 300 100' preserveAspectRatio='none'>
@@ -108,7 +118,7 @@
 				<p class="about__item__text">Track the results in actual sales numbers – making it easy to repeat successful campaigns – seasonally, for example, or automated for regular dispatch – making improvements as you go. </p>
 			</div>
 		</div>
-	</section>		
+	</section>
 
 	<div class="offers">
 		<div class="container">
@@ -198,7 +208,3 @@
 	</section>
 
 </main>
-
-
-
-
