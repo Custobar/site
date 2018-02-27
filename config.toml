@@ -30,3 +30,20 @@ url = '/#partners'
 [[params.topNavigation]]
 title = 'Blog'
 url = '/#blog'
+[params.copyright]
+text = 'Copyright © 2018 Custobar '
+[params.privacy_link]
+text = "Privacy Policy"
+url = "/"
+[[params.socialNetwork]]
+icon = "images-theme/linkedin.png"
+title = "linkedin"
+link = "/"
+[[params.socialNetwork]]
+icon = "images-theme/facebook.png"
+title = "Facebook"
+link = "/"
+[[params.socialNetwork]]
+icon = "images-theme/twitter.png"
+title = "Twitter"
+link = "/"
