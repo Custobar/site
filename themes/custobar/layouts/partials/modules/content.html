@@ -90,48 +90,45 @@
 		</div>
 	</section>
 	{{end}}
+	{{with $main.nutshell}}
 	<section class="about">
 		<div class="container">
-			<h2 class="base-title">Custobar in a nutshell</h2>
+			{{with .title}}
+			<h2 class="base-title">{{.}}</h2>
+			{{end}}
 		</div>
 		<div class="container">
+			{{range .list}}
 			<div class="about__item">
-				<img class="about__item__image" src="images-theme/all_data.svg" alt="image">
-				<h3 class="base-title about__item__title">All your data – from every <br> retail touch point</h3>
-				<p class="about__item__text">Whatever customers do in your stores, on your site, and in each of your sales and marketing channels, Custobar is listening. </p>
+				{{$alt := .title| plainify}}
+				{{with .icon}}
+				<img class="about__item__image" src="{{.}}" alt="{{$alt}}">
+				{{end}}
+				{{with .title}}
+				<h3 class="base-title about__item__title">{{.|safeHTML}}</h3>
+				{{end}}
+				{{with .caption}}
+				<p class="about__item__text">{{.|safeHTML}}</p>
+				{{end}}
 			</div>
-
-			<div class="about__item">
-				<img class="about__item__image" src="images-theme/secret_weapon.svg" alt="image">
-				<h3 class="base-title about__item__title">The retailer’s secret weapon</h3>
-				<p class="about__item__text">We analyze your data automatically, and then put it to work for you. </p>
-			</div>
-
-			<div class="about__item">
-				<img class="about__item__image" src="images-theme/hit-customers.png" alt="image">
-				<h3 class="base-title about__item__title">Hit customers where they live</h3>
-				<p class="about__item__text">Custobar generates campaign segments based on how your customers shop, how they respond to marketing in different media; and how they behave online. </p>
-			</div>
-
-			<div class="about__item">
-				<img class="about__item__image" src="images-theme/campaign_statistics.svg" alt="image">
-				<h3 class="base-title about__item__title">Refine and repeat</h3>
-				<p class="about__item__text">Track the results in actual sales numbers – making it easy to repeat successful campaigns – seasonally, for example, or automated for regular dispatch – making improvements as you go. </p>
-			</div>
+			{{end}}
 		</div>
 	</section>
-
 	<div class="offers">
 		<div class="container">
+			{{with .buttons}}
 			<div class="offers__buttons">
-				<a href="#" class="blue-button button">for retail + e-commerce</a>
-				<a href="#" class="blue-button button">for e-commerce only</a>
-				<a href="#" class="blue-button button">for brands</a>
+				{{range .}}
+				<a href="{{.url}}" class="blue-button button">{{.title}}</a>
+				{{end}}
 			</div>
-			<p class="offers__text">Custobar also has a <span class="blue-text">platform</span> specifically designed for data sensitive industries like pharmacies</p>
+			{{end}}
+			{{with .after_buttons_description}}
+			<p class="offers__text">{{.|safeHTML}}</p>
+			{{end}}
 		</div>
 	</div>
-
+	{{end}}
 	<section class="multiply">
 		<div class="container">
 			<h2 class="base-title multiply__title">How to multiply your sales conversions by 10</h2>

@@ -33,4 +33,27 @@ slider:
   link:
     title: Read more!
     url: "/"
+nutshell:
+  title: Custobar in a nutshell
+  list:
+  - icon: "images-theme/all_data.svg"
+    title: All your data –<br> from every retail touch point
+    caption: Whatever customers do in your stores, on your site, and in each of your sales and marketing channels, Custobar is listening.
+  - icon: "images-theme/secret_weapon.svg"
+    title: The retailer’s secret weapon
+    caption: We analyze your data automatically, and then put it to work for you.
+  - icon: "images-theme/hit-customers.png"
+    title: Hit customers where they live
+    caption: Custobar generates campaign segments based on how your customers shop, how they respond to marketing in different media; and how they behave online.
+  - icon: "images-theme/campaign_statistics.svg"
+    title: Refine and repeat
+    caption: Track the results in actual sales numbers – making it easy to repeat successful campaigns – seasonally, for example, or automated for regular dispatch – making improvements as you go.
+  buttons:
+  - title: for retail + e-commerce
+    url: "/"
+  - title: for e-commerce only
+    url: "/"
+  - title: for brands
+    url: "/"
+  after_buttons_description: Custobar also has a <a href="/" class="blue-text">platform</a> specifically designed for data sensitive industries like pharmacies
 ---
