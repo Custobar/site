@@ -65,41 +65,31 @@
 			</div>
 		</div>
 	</section>
-
+	{{with $main.slider}}
 	<section class="reviews">
 		<div class="container">
 			<div class="slider">
+				{{range .}}
 				<div class="slider__item">
+					{{with .icon}}
 					<div class="slide__avatar">
-						<img src="images-theme/slide.png" alt="">
+						<img src="{{.}}" alt="avatar">
 					</div>
-					<div class="slide__text">“Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.”
-					</div>
-					<a href="#" class="slide__link">Read more!</a>
-					<div class="slide__name"><span>Jyri Lipponen</span> <br> Founder, Levykauppa Äx</div>
+					{{end}}
+					{{with .text}}
+					<div class="slide__text">“{{.|safeHTML}}”</div>
+					{{end}}
+					{{with .link}}
+					<a href="{{.url}}" class="slide__link">{{.title}}</a>
+					{{end}}
+					<div class="slide__name"><span>{{with .name}}{{.}}{{end}}</span>
+					<br>{{with .position}}{{.}}{{end}}</div>
 				</div>
-				<div class="slider__item">
-					<div class="slide__avatar">
-						<img src="images-theme/slide.png" alt="">
-					</div>
-					<div class="slide__text">“Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.”
-					</div>
-					<a href="#" class="slide__link">Read more!</a>
-					<div class="slide__name"><span>Jyri Lipponen</span> <br> Founder, Levykauppa Äx</div>
-				</div>
-				<div class="slider__item">
-					<div class="slide__avatar">
-						<img src="images-theme/slide.png" alt="">
-					</div>
-					<div class="slide__text">“Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.”
-					</div>
-					<a href="#" class="slide__link">Read more!</a>
-					<div class="slide__name"><span>Jyri Lipponen</span> <br> Founder, Levykauppa Äx</div>
-				</div>
+				{{end}}
 			</div>
 		</div>
 	</section>
-
+	{{end}}
 	<section class="about">
 		<div class="container">
 			<h2 class="base-title">Custobar in a nutshell</h2>

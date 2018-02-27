@@ -25,5 +25,12 @@ slider:
   position: Founder, Levykauppa Äx
   link:
     title: Read more!
-    urk: "/"
+    url: "/read-more"
+- icon: "images-theme/slide.png"
+  text: Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.
+  name: Jyri Lipponen
+  position: Founder, Levykauppa Äx
+  link:
+    title: Read more!
+    url: "/"
 ---
