@@ -8,5 +8,22 @@ hero:
   description:
     title: "Let your own data boost your sales"
     text: With highly effective degree of automation, you’ll be able to reach out to customers in the way that suits them best – telling them about the products and promotions you can be sure they’ll want to hear about.
-
+key_benefits:
+  title: "Key benefits for retailer"
+  list:
+  - item: Focus more on profitable actions
+  - item: You’ll will be meaningful for you customer
+  - item: Campaigns will be done quickly
+  - item: See a real 360 view to customer
+book_demo:
+  title: Book a demo
+  caption: Leave your email and we’ll schedule a time for a personal 20min online demo for you.
+slider:
+- icon: "images-theme/slide.png"
+  text: Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.
+  name: Jyri Lipponen
+  position: Founder, Levykauppa Äx
+  link:
+    title: Read more!
+    urk: "/"
 ---

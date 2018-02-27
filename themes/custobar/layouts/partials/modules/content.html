@@ -29,28 +29,39 @@
 			{{end}}
 			{{end}}
 			<div class="sentence__item flex">
+				{{with $main.key_benefits}}
 				<div class="sentence__benefits">
 					<svg viewBox='0 0 300 100' preserveAspectRatio='none'>
 				    <path d='M0,0 300,0 300,100 0,100z' />
 				  </svg>
-					<div class="benefits__title base-title-small">Key benefits for retailer</div>
+					{{with .title}}
+					<div class="benefits__title base-title-small">{{.}}</div>
+					{{end}}
+					{{with .list}}
 					<ul class="benefits__list">
-						<li>Focus more on profitable actions</li>
-						<li>You’ll will be meaningful for you customer </li>
-						<li>Campaigns will be done quickly</li>
-						<li>See a real 360 view to customer</li>
+						{{range .}}
+							<li>{{.item}}</li>
+						{{end}}
 					</ul>
+					{{end}}
 				</div>
+				{{end}}
+				{{with $main.book_demo}}
 				<div class="sentence__form">
 					<form class="base-form">
-						<div class="form__title base-title-small">Book a demo</div>
-						<div class="form__text">Leave your email and we’ll schedule a time for a personal 20min online demo for you.</div>
+						{{with .title}}
+						<div class="form__title base-title-small">{{.}}</div>
+						{{end}}
+						{{with .caption}}
+						<div class="form__text">{{.}}</div>
+						{{end}}
 						<div class="input-wrap">
 							<input type="email" required>
 							<button type="submit">Send</button>
 						</div>
 					</form>
 				</div>
+				{{end}}
 			</div>
 		</div>
 	</section>
