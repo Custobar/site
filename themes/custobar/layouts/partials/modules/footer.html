@@ -3,7 +3,7 @@
 <footer>
   <div class="container">
     {{with $footer.title}}
-  	<h2 class="footer-title base-title">{{.}}</h2>
+  	<h2 class="footer-title base-title">{{.|safeHTML}}</h2>
     {{end}}
   	<div class="footer-grid flex">
       {{with $footer.menu}}
