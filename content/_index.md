@@ -56,4 +56,40 @@ nutshell:
   - title: for brands
     url: "/"
   after_buttons_description: Custobar also has a <a href="/" class="blue-text">platform</a> specifically designed for data sensitive industries like pharmacies
+multiply:
+  title: How to multiply your sales conversions by 10
+  caption: Example from a  bookshop
+  blocks:
+  - picture: 'images-theme/multiply_sales_2.svg'
+    title: 'Do...'
+    description: <li>1. Pick an upcoming book release</li> <li>2. Create a micro-segment of customers who have:/ <ul> <li>bought products from the same author</li> <li>browsed related product pages</li> <li>Shown interest in a special category (i.e Nordic Noir)</li> </ul> </li> <li>3. Create an appealing message and send</li> <li>4. Repeat with another book</li>
+  - picture: 'images-theme/multiply_sales_1.svg'
+    title: '...and you will get'
+    description: <li>Better email deliverability</li> <li>Better service for customers</li><li>Smaller marketing-list churn rate</li> <li>10x sales conversion compared to mass mailing</li>
+features:
+  title: Features that can make you a sales champion
+  caption: Do you sell both in retail stores and online? Do you have a loyalty program? Custobar is the only salestool that collects data from all sources. It can turn anyone into a sales champion.
+  blocks:
+  - picture: 'images-theme/segmentation.svg'
+    title: 'Powerful segmentation tool'
+    description: Pick target groups based on their customer behaviour:/ offline purchases, online purchases, web browsing, buying behaviour or any other customer touchpoint data.
+  - picture: 'images-theme/hero_laptop.svg'
+    title: '360° view of every customer'
+    description: Use statistics such as amounts and values of purchases, life-time value and purchases in different categories.
+  - picture: 'images-theme/multi_channel.svg'
+    title: 'Multi-channel campaigns'
+    description: Thanks to our easy-to-use interface, you can build a targeted campaign in just a few minutes, no expert skills needed.
+  - picture: 'images-theme/campaign_statistics.svg'
+    title: 'Campaign statistic'
+    description: Custobar closes the loop by showing results that you can compare to your targets.
+  - picture: 'images-theme/automation.svg'
+    title: 'Powerfull automation'
+    description: Dynamic targeting means that messages are posted to customers as soon as they fill certain target group criteria. The criteria can be dynamically altered.
+  - picture: 'images-theme/recommendations.svg'
+    title: 'Product recommendations'
+    description: Create personified product recommendations that can be used in customer service, in the web shop and in direct advertising.
+  button:
+    title: "view all features"
+    url: "/"
+
 ---
