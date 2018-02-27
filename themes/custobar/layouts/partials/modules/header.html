@@ -1,21 +1,21 @@
-{{$headerTitle := .Params.header.header_title}}
-{{$headerButton := .Params.header.header_button}}
-{{$headerMenu := .Params.header_section.menu}}
-
+{{$site := .Site.Params}}
 <header class="header">
   <div class="container flex">
-  	<a href="#" class="logo">
-  		<img src="images-theme/custobar_logo.png" alt="Custobar logo">
+    {{with $site.header.logo}}
+  	<a href="{{.url}}" class="logo">
+  		<img src="{{.src}}" alt="{{.alt}}">
   	</a>
+    {{end}}
+    {{with $site.topNavigation}}
   	<ul class="menu">
-  		<li class="menu__item"><a href="#">Features</a></li>
-  		<li class="menu__item"><a href="#">Pricing</a></li>
-  		<li class="menu__item"><a href="#">Support</a></li>
-  		<li class="menu__item"><a href="#">Partners</a></li>
-  		<li class="menu__item"><a href="#">Blog</a></li>
+      {{range .}}
+      <li class="menu__item"><a href="{{.url}}">{{.title}}</a></li>
+      {{end}}
   	</ul>
-  	<a href="#" class="demo blue-button button">Book a demo</a>
+    {{end}}
+    {{with $site.header.button}}
+  	<a href="{{.url}}" class="demo blue-button button">{{.title}}</a>
+    {{end}}
     <a class="ninja-btn" title="menu"><span></span></a>
   </div>
 </header>
-

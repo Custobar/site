@@ -8,18 +8,25 @@ metadescription = "Custobar"
 sharedescription = "Custobar"
 shareimage = "/uploads/2017/11/26/share.jpg"
 sharetitle = "Custobar"
+[params.header.logo]
+src = "images-theme/custobar_logo.png"
+alt = "Custobar"
+url = "/"
+[params.header.button]
+title = "Book a demo"
+url = "/"
 [[params.topNavigation]]
 title = 'Features'
-link = '/#features'
+url = '/#features'
 [[params.topNavigation]]
 title = 'Pricing'
-link = '/#pricing'
+url = '/#pricing'
 [[params.topNavigation]]
 title = 'Support'
-link = '/#supprot'
+url = '/#supprot'
 [[params.topNavigation]]
 title = 'Partners'
-link = '/#partners'
+url = '/#partners'
 [[params.topNavigation]]
 title = 'Blog'
-link = '/#blog'
+url = '/#blog'
