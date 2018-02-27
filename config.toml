@@ -8,3 +8,18 @@ metadescription = "Custobar"
 sharedescription = "Custobar"
 shareimage = "/uploads/2017/11/26/share.jpg"
 sharetitle = "Custobar"
+[[params.topNavigation]]
+title = 'Features'
+link = '/#features'
+[[params.topNavigation]]
+title = 'Pricing'
+link = '/#pricing'
+[[params.topNavigation]]
+title = 'Support'
+link = '/#supprot'
+[[params.topNavigation]]
+title = 'Partners'
+link = '/#partners'
+[[params.topNavigation]]
+title = 'Blog'
+link = '/#blog'
