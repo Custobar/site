@@ -2,8 +2,20 @@
 title: "about-us"
 type: "about-page"
 
+about:
+  title: "Refreshing retail <br> with customer data"
+  image: "/images-theme/about-img.png"
+  text_1: Custobar is founded upon great use of customer data, which is gathered both in online and bricks-and-mortar stores. This enables multi-channel campaigns that can strengthen either area, while bridging the gap between the two like no other solution.
+  text_2: Founded in 2012 by a team well-versed in retailer needs, and based in Helsinki, Finland, Custobar already provides its unique sales and marketing platform to over 40 major customers across Europe. We currently employ around 15 personnel, with offices in Helsinki, Amsterdam and Berlin.
+  text_3: If you have further questions about us – how we could affects your business and want to hear more about Custobar, don’t hesitate to contact us at
+  email: info@custobar.com
+
 footer:
-  title: Your customers are <span>induviduals</span>,<br>treat them that way
+  title: Get help for your sales
+  phone: + 46 72 5223 89 22
+  button:
+    title: Book a demo
+    url: "/"
   menu:
   - title: API documentation
     url: "/"

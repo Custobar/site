@@ -36,14 +36,14 @@ text = 'Copyright © 2018 Custobar '
 text = "Privacy Policy"
 url = "/"
 [[params.socialNetwork]]
-icon = "images-theme/linkedin.png"
+icon = "/images-theme/linkedin.png"
 title = "linkedin"
 link = "/"
 [[params.socialNetwork]]
-icon = "images-theme/facebook.png"
+icon = "/images-theme/facebook.png"
 title = "Facebook"
 link = "/"
 [[params.socialNetwork]]
-icon = "images-theme/twitter.png"
+icon = "/images-theme/twitter.png"
 title = "Twitter"
 link = "/"

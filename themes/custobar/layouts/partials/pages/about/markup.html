@@ -1,3 +1,30 @@
 {{partial "modules/header" .}}
-{{partial "modules/content" .}}
+
+{{$about := .Params.about}}
+<section class="about">
+	<div class="container">
+		<div class="content__wrap">
+			{{with $about.title}}
+			<h2 class="base-title about__title">{{.|safeHTML}}</h2>
+			{{end}}
+			{{with $about.text_1}}
+			<p class="base-text about__text">{{.|safeHTML}}</p>
+			{{end}}
+			{{with $about.image}}
+			<img src="{{.}}" alt="">
+			{{end}}
+			{{with $about.text_2}}
+			<p class="base-text about__text">{{.|safeHTML}}</p>
+			{{end}}
+			{{with $about.text_3}}
+			<p class="base-text about__text">{{.|safeHTML}}
+				{{with $about.email}} 
+				<a href="mailto:info@custobar.com" class="blue-text">{{.|safeHTML}}</a>
+				{{end}}
+			.</p>
+			{{end}}
+		</div>
+	</div>
+</section>
+
 {{partial "modules/footer" .}}

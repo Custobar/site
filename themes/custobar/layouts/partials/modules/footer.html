@@ -5,6 +5,15 @@
     {{with $footer.title}}
   	<h2 class="footer-title base-title">{{.|safeHTML}}</h2>
     {{end}}
+    <div class="footer-title-info">
+      {{with $footer.button}}
+      <a class="blue-text" href="{{.url}}">{{.title}}</a>
+      {{end}}
+      <span>or call</span>
+      {{with $footer.phone}}
+      <a class="blue-text phone" href="">{{.|safeHTML}}</a>
+      {{end}}
+    </div>
   	<div class="footer-grid flex">
       {{with $footer.menu}}
   		<ul class="footer__item footer__menu">
