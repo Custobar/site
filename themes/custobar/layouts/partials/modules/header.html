@@ -3,7 +3,7 @@
   <div class="container flex">
     {{with $site.header.logo}}
   	<a href="{{.url}}" class="logo">
-  		<img src="{{.src}}" alt="{{.alt}}">
+  		<img src="{{ .Site.BaseURL }}/images-theme/custobar_logo.png" alt="{{.alt}}">
   	</a>
     {{end}}
     {{with $site.topNavigation}}
