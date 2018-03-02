@@ -22,8 +22,35 @@
 				<a href="mailto:info@custobar.com" class="blue-text">{{.|safeHTML}}</a>
 				{{end}}
 			.</p>
-			{{end}}
 		</div>
+
+		{{with $about.slider}}
+		<section class="reviews">
+		<div class="container">
+			<div class="slider">
+				{{range .}}
+				<div class="slider__item">
+					{{with .icon}}
+					<div class="slide__avatar">
+						<img src="{{.}}" alt="avatar">
+					</div>
+					{{end}}
+					{{with .text}}
+					<div class="slide__text">“{{.|safeHTML}}”</div>
+					{{end}}
+					{{with .link}}
+					<a href="{{.url}}" class="slide__link">{{.title}}</a>
+					{{end}}
+					<div class="slide__name"><span>{{with .name}}{{.}}{{end}}</span>
+					<br>{{with .position}}{{.}}{{end}}</div>
+				</div>
+				{{end}}
+			</div>
+		</div>
+		</section>
+		{{end}}
+
+		{{end}}
 	</div>
 </section>
 

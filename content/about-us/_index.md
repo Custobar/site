@@ -9,6 +9,21 @@ about:
   text_2: Founded in 2012 by a team well-versed in retailer needs, and based in Helsinki, Finland, Custobar already provides its unique sales and marketing platform to over 40 major customers across Europe. We currently employ around 15 personnel, with offices in Helsinki, Amsterdam and Berlin.
   text_3: If you have further questions about us – how we could affects your business and want to hear more about Custobar, don’t hesitate to contact us at
   email: info@custobar.com
+  slider:
+  - icon: "/images-theme/slide.png"
+    text: Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.
+    name: Jyri Lipponen
+    position: Founder, Levykauppa Äx
+    link:
+      title: Read more!
+      url: "/testimonials/testimonial-test/"
+  - icon: "/images-theme/slide.png"
+    text: Our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40% is not unheard of.
+    name: Jyri Lipponen
+    position: Founder, Levykauppa Äx
+    link:
+      title: Read more!
+      url: "/testimonials/testimonial-test/"  
 
 footer:
   title: Get help for your sales
