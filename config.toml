@@ -26,7 +26,7 @@ title = 'Support'
 url = '/#supprot'
 [[params.topNavigation]]
 title = 'Partners'
-url = '/#partners'
+url = '/partners/'
 [[params.topNavigation]]
 title = 'Blog'
 url = '/#blog'

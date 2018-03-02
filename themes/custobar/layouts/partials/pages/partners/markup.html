@@ -1,0 +1,27 @@
+{{partial "modules/header" .}}
+
+{{$partners := .Params.partners}}
+<section class="partners">
+	<div class="container">
+		<div class="content__wrap">
+			{{with $partners.title}}
+			<h2 class="base-title partners__title">{{.|safeHTML}}</h2>
+			{{end}}
+			{{with $partners.text_1}}
+			<p class="base-text partners__text">{{.|safeHTML}}</p>
+			{{end}}
+			{{with $partners.image}}
+			<img src="{{.}}" alt="">
+			{{end}}
+			{{with $partners.text_2}}
+			<p class="base-text partners__text">{{.|safeHTML}}</p>
+			{{end}}
+			{{with $partners.text_3}}
+			<p class="base-text partners__text">{{.|safeHTML}}</p>
+			{{end}}
+		</div>
+
+	</div>
+</section>
+
+{{partial "modules/footer" .}}
