@@ -14,7 +14,7 @@ alt = "Custobar"
 url = "/"
 [params.header.button]
 title = "Book a demo"
-url = "/"
+url = "/book-a-demo/"
 [[params.topNavigation]]
 title = 'Features'
 url = '/#features'

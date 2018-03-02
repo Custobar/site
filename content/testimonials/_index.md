@@ -9,7 +9,7 @@ footer:
   phone: + 46 72 5223 89 22
   button:
     title: Book a demo
-    url: "/"
+    url: "/book-a-demo/"
   menu:
   - title: API documentation
     url: "/"

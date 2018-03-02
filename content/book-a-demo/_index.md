@@ -1,12 +1,11 @@
 ---
-title: "partners"
-type: "partners-page"
-partners:
-  title: "Become a Partner"
-  image: "/images-theme/partners.svg"
+title: "book-a-demo"
+type: "book-a-demo-page"
+book:
+  title: "Book a live demo"
+  image: "/images-theme/book-a-demo.jpg"
   text_1: Partner is a company, that collaborates with Custobar in commercially promoting the Custobar Platform or any service related thereto to Custobar’s potential or existing customers.. Partner is entitled to market, sell, onboard, i.e. make integrations and configurations, or provide support or consultation services, relating to the Custobar Platform, to Customers
   text_2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  text_3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   ecommerce_title: "eCommerce integration"
   ecommerce_text: Custobar offers several plug-ins for integration with the most popular <br> e-commerce platforms. Ask for more details. 
   ecommerce_list:
@@ -30,11 +29,6 @@ partners:
  
 
 footer:
-  title: Get help for your sales
-  phone: + 46 72 5223 89 22
-  button:
-    title: Book a demo
-    url: "/book-a-demo/"
   menu:
   - title: API documentation
     url: "/"

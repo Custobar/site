@@ -1,0 +1,36 @@
+{{partial "modules/header" .}}
+
+{{$book := .Params.book}}
+<section class="book-a-demo">
+	<div class="container">
+		<div class="content__wrap">
+			{{with $book.title}}
+			<h2 class="base-title book-a-demo__title">{{.|safeHTML}}</h2>
+			{{end}}
+			{{with $book.text_1}}
+			<p class="base-text book-a-demo__text">{{.|safeHTML}}</p>
+			{{end}}
+			{{with $book.image}}
+			<img class="book-a-demo__image" src="{{.}}" alt="">
+			{{end}}
+			{{with $book.text_2}}
+			<p class="base-text book-a-demo__text">{{.|safeHTML}}</p>
+			{{end}}
+		</div>
+
+		<form class="base-form contact-us">
+			<svg viewBox='0 0 300 100' preserveAspectRatio='none'>
+		    <path d='M0,0 300,0 300,100 0,100z' />
+		  </svg>
+			<div class="form__title base-title-small">Contact us</div>
+			<div class="form__text">Leave your email and we will be in touch soon</div>
+			<div class="input-wrap">
+				<input type="email" required>
+				<button type="submit">Send</button>
+			</div>
+		</form>
+
+	</div>
+</section>
+
+{{partial "modules/footer" .}}
