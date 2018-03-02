@@ -11,6 +11,9 @@
       {{range .}}
       <li class="menu__item"><a href="{{.url}}">{{.title}}</a></li>
       {{end}}
+      {{with $site.header.button}}
+      <a href="{{.url}}" class="demo blue-button button mobile-button">{{.title}}</a>
+      {{end}}
   	</ul>
     {{end}}
     {{with $site.header.button}}
