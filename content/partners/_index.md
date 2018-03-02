@@ -7,6 +7,26 @@ partners:
   text_1: Partner is a company, that collaborates with Custobar in commercially promoting the Custobar Platform or any service related thereto to Custobar’s potential or existing customers.. Partner is entitled to market, sell, onboard, i.e. make integrations and configurations, or provide support or consultation services, relating to the Custobar Platform, to Customers
   text_2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   text_3: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  ecommerce_title: "eCommerce integration"
+  ecommerce_text: Custobar offers several plug-ins for integration with the most popular <br> e-commerce platforms. Ask for more details. 
+  ecommerce_list:
+  -  image: "/images-theme/sponsor-1.png"
+  -  image: "/images-theme/sponsor-2.png"
+  -  image: "/images-theme/sponsor-3.png"
+  partners_title: "Partners"
+  partners_list:
+  -  image: "/images-theme/sponsor-1.png"
+  -  image: "/images-theme/sponsor-2.png"
+  -  image: "/images-theme/sponsor-3.png"
+  -  image: "/images-theme/sponsor-1.png"
+  -  image: "/images-theme/sponsor-2.png"
+  -  image: "/images-theme/sponsor-3.png"
+  -  image: "/images-theme/sponsor-1.png"
+  -  image: "/images-theme/sponsor-2.png"
+  -  image: "/images-theme/sponsor-3.png"
+  -  image: "/images-theme/sponsor-1.png"
+  -  image: "/images-theme/sponsor-2.png"
+  -  image: "/images-theme/sponsor-3.png"
  
 
 footer:

@@ -21,6 +21,50 @@
 			{{end}}
 		</div>
 
+		<form class="base-form contact-us">
+			<svg viewBox='0 0 300 100' preserveAspectRatio='none'>
+		    <path d='M0,0 300,0 300,100 0,100z' />
+		  </svg>
+			<div class="form__title base-title-small">Contact us</div>
+			<div class="form__text">Leave your email and we will be in touch soon</div>
+			<div class="input-wrap">
+				<input type="email" required>
+				<button type="submit">Send</button>
+			</div>
+		</form>
+
+		<div class="partners__list ecommerce__partners">
+			{{with $partners.ecommerce_title}}
+			<h2 class="base-title">{{.|safeHTML}}</h2>
+			{{end}}
+			{{with $partners.ecommerce_list}}
+				{{range .}}
+		  		{{with .image}}
+		       <img src="{{.}}" alt="">
+		      {{end}}
+      	{{end}}
+      	{{end}}
+
+      {{with $partners.ecommerce_text}}
+			<p class="ecommerce__partners__text">{{.|safeHTML}}</p>
+			{{end}}
+		</div>
+
+		<div class="partners__list">
+			{{with $partners.partners_title}}
+			<h2 class="base-title">{{.|safeHTML}}</h2>
+			{{end}}
+			<div class="partners__list__grid">
+				{{with $partners.partners_list}}
+				{{range .}}
+		  		{{with .image}}
+		       <img src="{{.}}" alt="">
+		      {{end}}
+      	{{end}}
+      	{{end}}
+			</div>
+		</div>
+
 	</div>
 </section>
 
