@@ -32,7 +32,7 @@ slider:
   position: Founder, Levykauppa Äx
   link:
     title: Read more!
-    url: "/"
+    url: "/testimonials/testimonial-test/"
 nutshell:
   title: Custobar in a nutshell
   list:

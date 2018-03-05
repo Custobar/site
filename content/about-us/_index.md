@@ -28,6 +28,7 @@ about:
 footer:
   title: Get help for your sales
   phone: + 46 72 5223 89 22
+  text: or call
   button:
     title: Book a demo
     url: "/book-a-demo/"

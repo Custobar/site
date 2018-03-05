@@ -1,6 +1,11 @@
 ---
 title: "testimonials"
 type: "testimonials"
+main_title: "Levykauppa AX"
+description: When I got Custobar running two years ago, I stopped all print advertising. Levykauppa Äx was famous nation-wide for its hilarious print ads. It had become eaten alive. I moved everything to social media and Custobar. Now, our staff sends 100-200 different messages per month through Custobar. The secret is that it is so easy and motivating to use. You see the results the following day. Sometimes the conversion rates are just insane; 40 % is not unheard of.
+short_description: The most successful record-store chain in the Nordics, 40-50 employees.
+main_image: "/images-theme/article_img3.jpg"
+small_image: "/images-theme/small.jpg"
 
 
 footer:

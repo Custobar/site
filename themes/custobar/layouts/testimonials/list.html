@@ -1,7 +1,44 @@
 <!doctype html>
   {{partial "vendor/head" .}}
   <body>
-    {{partial "pages/about/markup" .}}
+    {{partial "modules/header" .}}
+
+		{{$testimolials := .Params.testimolials}}
+	<div class="container">
+	    <section class=testimolials>
+
+	    	<div class="content__wrap">
+					{{with $testimolials.title}}
+					<h2 class="base-title testimolials__title">{{.|safeHTML}}</h2>
+					{{end}}
+					{{with $testimolials.text}}
+					<p class="base-text testimolials__text">{{.|safeHTML}}</p>
+					{{end}}
+				</div>
+
+	     {{ $LatestPost := where .Site.Pages "Type" "==" "testimonials" }}
+	        {{ range first 6 $LatestPost }}
+	            <div class="article__item">
+	            		<img src="{{.Params.main_image}}" alt="" class="article__image">
+									<div class="grid">
+										<div class="grid__item">
+											<img src="{{.Params.small_image}}" alt="" class="article__preview">
+										</div>
+										<div class="grid__item article__content">
+											<h2 class="article__title base-title">{{.Params.main_title}}</h2>
+											<div class="article__description">{{.Params.short_description}}</div>
+											<div class="article__text base-text">{{.Params.description}}</div>
+											<a href="{{ .Permalink }}" class="blue-button button">Read more</a>
+										</div>
+									</div>
+	            </div>
+	        {{ end }}
+	    </section>
+	</div>
+
+
+
+    {{partial "modules/footer" .}}
     {{partial "vendor/footer-scripts" .}}
   </body>
 </html>

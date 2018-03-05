@@ -1,12 +1,15 @@
 ---
 title: "testimonials"
-type: "testimonials"
+type: "test"
 
-
+testimolials:
+  title: "Customer success <br> always comes first"
+  text: Do you sell both in retail stores and online? Do you have a loyalty program? Custobar is the only salestool that collects data from all sources. It can turn anyone into a sales champion.
 
 footer:
   title: Get help for your sales
   phone: + 46 72 5223 89 22
+  text: or call
   button:
     title: Book a demo
     url: "/book-a-demo/"
