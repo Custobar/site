@@ -29,7 +29,7 @@ title = 'Partners'
 url = '/partners/'
 [[params.topNavigation]]
 title = 'Blog'
-url = '/#blog'
+url = '/blog/'
 [params.copyright]
 text = 'Copyright © 2018 Custobar '
 [params.privacy_link]
