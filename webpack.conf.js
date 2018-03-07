@@ -11,11 +11,11 @@ let webpackConfig = require("./package.json").webpackConfig;
 module.exports = {
   context: __dirname + webpackConfig.inputFolder,
   entry: {
-    global: './js/global.js',
+    global: './javascript/global.js',
   },
   output: {
     path: __dirname + webpackConfig.outputFolder,
-    filename: 'js/[name].min.js',
+    filename: 'javascript/[name].min.js',
     publicPath: webpackConfig.prodServer
   },
   module: {
